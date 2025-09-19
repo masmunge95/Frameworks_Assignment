@@ -43,7 +43,9 @@ with st.spinner('Loading and processing data... This may take a moment on first 
 # --- Main App Logic ---
 # Only run the rest of the app if the data was loaded successfully
 if df is not None:
-    st.write("This app provides an analysis of the CORD-19 dataset, including data cleaning, basic statistics, and visualizations.")
+    st.write("Dive into COVID-19 research with this interactive Streamlit app. " \
+    "Instantly filter the CORD-19 dataset by year, journal, or source and watch the charts update in real time — from yearly publication trends and prolific journals to word clouds of hot topics. " \
+    "It’s a fast, intuitive way to explore one of the largest open collections of COVID-19 literature.")
 
     # ===== Sidebar Filters =====
     st.sidebar.header("Filters")
